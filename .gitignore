@@ -1,5 +1,7 @@
 # custom files
-custom/
+*
+
+!custom/
 !custom/plugins/example
 !custom/example.zsh
 
