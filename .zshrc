@@ -76,9 +76,10 @@ source $ZSH/oh-my-zsh.sh
 # ssh
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
 
+#Set dircolors
 eval `dircolors ~/dotfiles/dircolors-solarized/dircolors.ansi-light`
 
-
+#Tell zsh to user above dircolors completion style
 zstyle ':completion:*:default' list-colors ${(s.:.)LS_COLORS}
 
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
