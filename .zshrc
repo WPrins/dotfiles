@@ -78,6 +78,7 @@ source $ZSH/oh-my-zsh.sh
 
 #Set dircolors
 eval `dircolors ~/dotfiles/dircolors-solarized/dircolors.ansi-light`
+#export DOCKER_HOST=‘tcp://0.0.0.0:2375
 
 #Tell zsh to user above dircolors completion style
 zstyle ':completion:*:default' list-colors ${(s.:.)LS_COLORS}
@@ -94,3 +95,6 @@ alias goapi='cd /mnt/c/Users/Wessel\ Prins/MedAPI'
 alias gowindows='cd /mnt/c/'
 alias sshlive='ssh api.medapp.nu -L 27017:localhost:27017 -L 3306:localhost:3306'
 alias sshdev='ssh dev.medapp.nu -L 27018:localhost:27017 -L 3307:localhost:3306'
+alias sshteam='ssh wessel@192.168.1.37'
+alias sshdash='ssh justin@192.168.1.170'
+alias sshops='ssh ops.medapp.nu'
