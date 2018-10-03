@@ -1,12 +1,14 @@
 # Path to your oh-my-zsh installation.
-  export ZSH=/home/wessel/.oh-my-zsh
+export ZSH=$HOME/.oh-my-zsh
 export TERM="xterm-256color"
+export PATH=~/development/flutter/bin:$PATH
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="powerlevel9k/powerlevel9k"
+#ZSH_THEME="powerlevel9k/powerlevel9k"
+ZSH_THEME="common"
 # DEFAULT_USER="wessel"
 
 # Uncomment the following line to use case-sensitive completion.
@@ -77,8 +79,11 @@ source $ZSH/oh-my-zsh.sh
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
 
 #Set dircolors
-eval `dircolors ~/dotfiles/dircolors-solarized/dircolors.ansi-light`
+#eval `dircolors ~/dotfiles/dircolors-solarized/dircolors.ansi-light`
 #export DOCKER_HOST=‘tcp://0.0.0.0:2375
+
+#colorls
+#source $(dirname $(gem which colorls))/tab_complete.sh
 
 #Tell zsh to user above dircolors completion style
 zstyle ':completion:*:default' list-colors ${(s.:.)LS_COLORS}
@@ -98,3 +103,7 @@ alias sshdev='ssh dev.medapp.nu -L 27018:localhost:27017 -L 3307:localhost:3306'
 alias sshteam='ssh wessel@192.168.1.37'
 alias sshdash='ssh justin@192.168.1.170'
 alias sshops='ssh ops.medapp.nu'
+alias ls='/Users/wesselprins/.gem/ruby/2.3.0/bin/colorls'
+
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+
