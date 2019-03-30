@@ -1,4 +1,5 @@
 # Path to your oh-my-zsh installation.
+ZSH_DISABLE_COMPFIX=true
 export ZSH=$HOME/.oh-my-zsh
 export TERM="xterm-256color"
 export PATH=~/development/flutter/bin:$PATH
@@ -98,12 +99,14 @@ zstyle ':completion:*:default' list-colors ${(s.:.)LS_COLORS}
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias goapi='cd /mnt/c/Users/Wessel\ Prins/MedAPI'
 alias gowindows='cd /mnt/c/'
-alias sshlive='ssh api.medapp.nu -L 27017:localhost:27017 -L 3306:localhost:3306'
-alias sshdev='ssh dev.medapp.nu -L 27018:localhost:27017 -L 3307:localhost:3306'
+alias sshlive='ssh wessel@api.medapp.nu -L 27017:localhost:27017 -L 3306:localhost:3306'
+alias sshdev='ssh wessel@dev.medapp.nu -L 27018:localhost:27017 -L 3307:localhost:3306'
 alias sshteam='ssh wessel@192.168.1.37'
 alias sshdash='ssh justin@192.168.1.170'
-alias sshops='ssh ops.medapp.nu'
-alias ls='/Users/wesselprins/.gem/ruby/2.3.0/bin/colorls'
+alias sshops='ssh wessel@ops.medapp.nu'
+alias sshwesselnew='ssh wessel@new.wesselprins.nl'
+alias dartisan='docker-compose exec myapp php artisan'
+# alias ls='/Users/wesselprins/.gem/ruby/2.3.0/bin/colorls'
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
