@@ -8,8 +8,8 @@ export PATH=~/development/flutter/bin:$PATH
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-#ZSH_THEME="powerlevel9k/powerlevel9k"
-ZSH_THEME="common"
+ZSH_THEME="powerlevel9k/powerlevel9k"
+#ZSH_THEME="common"
 # DEFAULT_USER="wessel"
 
 # Uncomment the following line to use case-sensitive completion.
@@ -54,7 +54,7 @@ DISABLE_UNTRACKED_FILES_DIRTY="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git history history-substring-search sublime sudo zsh-syntax-highlighting)
+plugins=(kubectl git history history-substring-search sublime sudo zsh-syntax-highlighting)
 
 # User configuration
 
@@ -102,7 +102,7 @@ alias gowindows='cd /mnt/c/'
 alias sshlive='ssh wessel@api.medapp.nu -L 27017:localhost:27017 -L 3306:localhost:3306'
 alias sshdev='ssh wessel@dev.medapp.nu -L 27018:localhost:27017 -L 3307:localhost:3306'
 alias sshteam='ssh wessel@192.168.1.37'
-alias sshdash='ssh justin@192.168.1.170'
+alias sshdash='ssh justin@192.168.1.224'
 alias sshops='ssh wessel@ops.medapp.nu'
 alias sshwesselnew='ssh wessel@new.wesselprins.nl'
 alias dartisan='docker-compose exec myapp php artisan'
